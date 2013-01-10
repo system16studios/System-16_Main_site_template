@@ -1,0 +1,198 @@
+/*--------[GLOBAL]--------*/
+.home {
+	background: #3BACA0;
+	}
+a {
+	color: #fff;
+	font-family: "Oswald", serif, arial;
+	list-style-type: none;
+	text-decoration: none;
+	padding: 0px 30px;
+	text-align: center;
+	}
+h2{
+	font-family: "Oswald", serif, arial;
+	color: #fff;
+	padding: 0px;
+	font-size: 25px;
+	font-weight: 100;
+	text-indent: 10px;
+	}
+nav{
+	margin-left: 50px;
+	width: 600px;
+	padding: 0px 20px;
+	}	
+.middle-box, .middle-box2, .contact{
+	background: #242424;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	margin: 100px auto 10px;
+	padding: 5px;
+	width: 700px;
+	overflow: hidden;
+	}
+.middle-box2, .contact {
+	margin-top: 10px;
+	overflow: hidden;
+	}
+.middle-box2 p {
+	text-align: justify;
+	padding: 2px 7px;
+	color: #fff;
+	font-family: "Oswald" serif, arial;
+	font-size: 14px;
+	}
+.middle-box2 hgroup {
+	font-family: "Oswald", serif, arial;
+	color: #fff;
+	padding: 2px;
+	font-size: 15px;
+	font-weight: 100;
+	margin-left:27px;
+	}
+.progress-bar{
+	overflow: hidden;
+	background-color: #1a1a1a;
+	height: 8px;
+	padding-top: 0px;
+	width: 525px;
+	margin: 50px auto 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 0 1px 1px #000 inset, 0 1px 0 #444;
+	-webkit-box-shaddow: 0 1px 1px #000 inset, 0 1px 0 #444;
+	box-shadow: 0 1px 1px #000 inset, 0 1px 0 #444;
+	}
+.progress-bar span{
+	display: inline-block;
+	height: 25px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 155, .5) inset;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+	-webkit-transition: width .4s ease-in-out;
+	-moz-transition: width .4s ease-in-out;
+	-ms-transition: width .4s ease-in-out; /*for IE*/
+	-o-transition: width .4s ease-in-out;/*for OPERA*/
+	}
+.blue span{
+	background-color: #34c2e3;
+	}
+/*--------[this makes the bar animate the stripes.  NO JAVASCRIPT]--------*/
+.stripes span{
+	margin: 0px;
+	-webkit-background-size: 30px 30px;
+	-moz-background-size: 30px 30px;
+	background-size: 30px 30px;
+	background-image: -webkit-gradient(linear, left top, right bottom, 
+						color-stop(.25, rgba(255, 255, 255, .15)), color-stop(.25, transparent),
+						color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .15)),
+						color-stop(.75, rgba(255, 255, 255, .15)), color-stop(.75, transparent),
+						to(transparent));
+	background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+						transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+						transparent 75%, transparent);
+	background-image: -moz-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+						transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+						transparent 75%, transparent);
+	background-image: -ms-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+						transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+						transparent 75%, transparent);
+	background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+						transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+						transparent 75%, transparent);
+	background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+						transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+						transparent 75%, transparent); 	
+	-webkit-animation: animate-stripes 3s linear infinite;
+	-moz-animation: animate-stripes 3s linear infinite;       		
+	}
+@-webkit-keyframes animate-stripes { 
+	0% {background-position: 0 0;} 100% {background-position: 60px 0;}
+	}
+@-moz-keyframes animate-stripes {
+	0% {background-position: 0 0;} 100% {background-position: 60px 0;}
+	}	
+/*--------[END]--------*/	
+/*--------[this is the portfolio]--------*/
+.thumb{
+	width: 125px;
+	height: 125px;
+	padding: 10px;
+	-moz-box-shadow: 0 1px 1px #000 inset, 0 1px 0 #bbbbbb;
+	-webkit-box-shaddow: 0 1px 1px #000 inset, 0 1px 0 #bbbbbb;
+	box-shadow: 0 1px 1px #000 inset, 0 1px 0 #bbbbbb;
+	margin: 5px;
+	flosat: left;
+	}
+#portfolio ul, .showroom  {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	}
+#portfolio ul li , .showroom li{
+	width: 150px;
+	margin: 5px;
+	position: relative;
+	float: left;
+	list-style-type: none;
+	}
+.showroom  {
+	margin-left: 10px;
+	}
+#portfolio ul li p, .showroom li p {
+	color: #fff;
+	font-size: 12px;
+	font-weight: 100;
+	width: 145px;
+	font-family: "Oswald", serif, arial;
+	overflow: hidden;
+	}
+
+
+
+/*--------[this is the resume page]--------*/
+#resume hgroup, #resume h3{
+	text-align: center;
+	padding: 0;
+	font-family: "Oswald", serif, arial;
+	color: #fff;
+	}
+#resume hgroup{
+	margin: auto;
+	margin-bottom: 50px;
+	}
+.worklode{
+	margin: 10px auto;
+	background: #1A1A1A;
+	overflow: hidden;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 0 1px 1px #000 inset, 0 1px 0 #bbbbbb;
+	-webkit-box-shaddow: 0 1px 1px #000 inset, 0 1px 0 #bbbbbb;
+	box-shadow: 0 1px 1px #000 inset, 0 1px 0 #bbbbbb;
+	}
+.worklode aside {
+	width: 150px;
+	height: 100%;
+	position: relative;
+	float: left;
+	margin-right: 5px;
+	margin-left: 20px;
+	color: #fff;
+	font-family: "Oswald", serif, arial;
+	}
+.worklode p{
+	padding: 0px 10px;
+	font-family: "Oswald", serif, arial;
+	margin-left: 170px;
+	font-size: 13px;
+	font-weight: 100;
+	}
+/*--------[END]--------*/

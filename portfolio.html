@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="mainsheet.css" />
+	</head>
+	<body id="container" class="home">
+		<section id="main" class="body">
+			<div class="middle-box">
+			<h2>System 16 Studios</h2>
+				<div class="progress-bar blue stripes">
+					<span style=" width: 46%;"></span>
+			</div>
+			<nav>
+				<a href="#" class="fifth">Home</a> 
+				<a href="resume.html" class="two-fifth">Resume</a>
+				<a href="portfolio.html" class="three-fifth">Portfolio</a> 
+				<a href="#" class="four-fifth">Projects</a>
+				<a href="contact.html" class="full">Contact</a>
+			</nav>
+		</section>
+		<section class="middle-box2">
+			<div id="portfolio">
+			<ul class="showroom">
+			<li>
+			<img src="bongiorno.jpg" class="thumb" />
+			<p>www.francobongiorno.com<br />(Defucnt)</p></li>
+			<li>
+			<img src="toned.jpg" class="thumb"/>
+			<p>www.tonedathome.com<br />(Defucnt)</p></li>
+			<li>
+			<img src="milo.jpg" class="thumb"/>
+			<p>www.miloz.com</P></li>
+			<li>
+			</ul>
+				<ul>
+					<li><a href="http://edwardjimenez6.carbonmade.com/" target="_blank" >My Carbonmade Portfolio</a></li>
+					<li><a href="https://github.com/system16studios" target="_blank" >My Github Repository</a></li>
+					</ul>
+				<ul>
+				<ul>
+					<li>Corporate Template 1</li>
+					<li>Corporate Template 2</li>
+					<li>Corporate Template 3</li>
+				</ul>
+				<ul>
+					<li>Band Template 1</li>
+					<li>Band Template 2</li>
+				</ul>
+				<ul>
+					<li>concept 1</li>
+					<li>concept 2</li>
+				</ul>	
+			</div>
+		</section>
+	
+	</body>
+</html>	
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+	$(document).ready(function(){ 
+		$('.fifth').click(function(){
+			$(this).parent().prev().children('span').css('width','7%');
+			});
+		$('.two-fifth').click(function(){
+			$(this).parent().prev().children('span').css('width','25%');
+			});
+		$('.three-fifth').click(function(){
+			$(this).parent().prev().children('span').css('width','46%');
+			});
+		$('.four-fifth').click(function(){
+			$(this).parent().prev().children('span').css('width','66%');
+			});
+		$('.full').click(function(){
+			$(this).parent().prev().children('span').css('width','100%');
+			});	
+	});
+</script>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="mainsheet.css" />
+	</head>
+	<body id="container" class="home">
+		<section id="main" class="body">
+			<div class="middle-box">
+			<h2>System 16 Studios</h2>
+				<div class="progress-bar blue stripes">
+					<span style=" width: 25%;"></span>
+			</div>
+			<nav>
+				<a href="#" class="fifth">Home</a> 
+				<a href="resume.html" class="two-fifth">Resume</a>
+				<a href="portfolio.html" class="three-fifth">Portfolio</a> 
+				<a href="#" class="four-fifth">Projects</a>
+				<a href="contact.html" class="full">Contact</a>
+			</nav>
+		</section>
+		<section class="middle-box2">
+			<div id="resume">
+					<hgroup>
+						<h2>Edward Jimenez</h2>
+						<h4>205 Bowers St.<br />
+						Apt# 1L<br />
+						Jersey City, NJ. 07307<br />
+						(201)256-5215
+						</h4>
+					</hgroup><h3>Skills</h3>
+					<article class="worklode">
+					<aside>
+					<h5><a href="https://github.com/system16studios" style="padding-left: 0px;">Visit my Github Repository</a></h5>
+					</aside>
+					<p>HTML5, DHTML, XHTML, CSS3, JAVASCRIPT, JQuery, XML, CMS(Drupal)<br /> Microsoft Office Suite, Adobe Creative Suite. <br />Basic Microsoft windows troubleshoot,  <br />Bilingual in English and Spanish.</p>
+					</article>
+					<h3>Education</h3>
+					<article class="worklode">
+					<aside><h4>Kean University of New Jersey, Union, NJ</h4></aside>
+					<p>- Majored in Visual Communications. Served as Arts and Entertainment Editor & Layout</p> </p><p>- Editor for the student newspaper The Independent. </p>
+					<br />
+
+					<aside><h4>LASCOMP Institute, Hoboken, NJ</h4></aside>            
+					<p>- Received certifications in Web Development</p>. 
+					</article>
+					<h3>Work History</h3>
+					<article class="worklode">
+						<aside>
+						<h4>Mimosa Digital, Hoboken NJ</h4>
+						<h5>Production Assistant</h5>
+						<h5>2/2008 - 8/2012</h5>
+						</aside>
+						<p>- Conduct and perform video conversions between various mediums which includes editing, light flash design and static cleanup. </p><p>- Work with a variety of digital equipment, preparing machines for printing, printing customer work and calibrating printers for color correction with various specialized profiles.  </p><p>- Mount finished artworks and prints, build appropriate frames and settings. </p><p>- Responsible for inventory tracking and ordering. </p><p>- Troubleshoot network connectivity issues. </p><p>- Install updates on workstations.</p><p>- Perform maintenance on equipment including Epson and Canon large format printers. </p>					
+					</article>
+					<article class="worklode">
+					<aside>
+					<h4>Vonage Holdings, Holmdel, NJ</h4>
+					<h5>NOC/E911 Ops Engineer</h5>
+					<h5>9/2005 - 7/2007</h5>
+					</aside>
+						<p>Responsible for monitoring multiple alarm & notification systems particularly Nagios alarms.</p><p>- Process and analyze statistical reports identifying systemic issues in the production environment.</p><p>- Work with partner carriers to troubleshoot more advanced issues for customers, including logging and querying issues with the Cisco network and hardware failures for call logs.</p><p>- E911 SME responsible for monitoring and troubleshooting 911 circuits and proxy servers including the call trace and investigation of SIP information for discrepancies and escalate if necessary.</p><p>- Responsible for documenting NOC/911 issues and the changes to its resolutions.</p>					
+					</article>
+					<article class="worklode">
+					<aside>
+					<h4>BPA Worldwide, <br />Union, NJ</h4>
+					<h5>Proof Reader, Supervisor</h5>
+					<h5>2/2004 - 9/2005</h5>
+					</aside>
+						<p>- Verify accuracy of circulation figures for periodical publishing companies.</p> 
+						</p><p>- Compile excel spreadsheets to measure publishing market trends.</p>  
+						</p><p>- Provided excellent customer service by interacting with client publishers to resolve discrepancies. </p> 
+						</p><p>- Used Microsoft Access to manage client database and track job duties.</p>  
+						</p><p>- Managed and assigned work to three similar proof readers in same office.</p>					
+					</article>
+					<article class="worklode">
+					<aside>
+					<h4>Bagelmasters, <br />Hillside, NJ</h4>
+					<h5>Manager</h5>
+					<h5>4/2002 - 10/2003</h5></aside>
+						<p>- Oversaw daily operations for a busy and exciting food service business.</p>
+						</p><p>- Managed two to four employees who worked the shops counter and prepared food for customers.</p>
+						</p><p>- Responsible for maintaining stores inventory and ordered supplies and food products. </p>
+					</article>
+					<article class="worklode">
+					<aside>
+					<h4>Impact Glass, <br />Verona, NJ</h4>
+					<h5>Webmaster</h5>
+					<h5>3/2001 - 4/2002</h5></aside>
+						<p>- Performed fabrication of glass panes and panels. </p>
+						</p><p>- Assisted in mounting windows and storefronts. </p>
+						</p><p>- Created and maintained company website using Microsoft Frontpage and Adobe Photoshop.</p>
+						</p><p>- Monitored and troubleshot database issues.</p>
+					</article>
+					<article class="worklode">
+					
+					</article>
+						
+			</div>
+		</section>
+	
+	</body>
+</html>	
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+	$(document).ready(function(){ 
+		$('.fifth').click(function(){
+			$(this).parent().prev().children('span').css('width','7%');
+			});
+		$('.two-fifth').click(function(){
+			$(this).parent().prev().children('span').css('width','25%');
+			});
+		$('.three-fifth').click(function(){
+			$(this).parent().prev().children('span').css('width','46%');
+			});
+		$('.four-fifth').click(function(){
+			$(this).parent().prev().children('span').css('width','66%');
+			});
+		$('.full').click(function(){
+			$(this).parent().prev().children('span').css('width','100%');
+			});	
+	});
+</script>

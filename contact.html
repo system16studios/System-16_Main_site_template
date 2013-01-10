@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="mainsheet.css" />
+		<link rel="stylesheet" type="text/css" href="contact.css" />
+	</head>
+	<body id="container" class="home">
+		<section id="main" class="body">
+			<div class="middle-box">
+			<h2>System 16 Studios</h2>
+				<div class="progress-bar blue stripes">
+					<span style=" width: 100%;"></span>
+			</div>
+			<nav>
+				<a href="#" class="fifth">Home</a> 
+				<a href="resume.html" class="two-fifth">Resume</a>
+				<a href="portfolio.html" class="three-fifth">Portfolio</a> 
+				<a href="#" class="four-fifth">Projects</a>
+				<a href="contact.html" class="full">Contact</a>
+			</nav>
+		</section>
+		<section class="contact">
+			<article id="contact">
+					<h2>Contacting Me</h2>
+					<form action="#" method="post">
+						<label for="name">Name:</label>
+						<input type="text" id="name" placeholder="Enter your full name" />
+						<br />
+						<label for="email">Email:</label>
+						<input type="email" id="email" placeholder="Enter your email address" />
+						<br />
+						<label for="message">Message:</label>
+						<textarea id="message" placeholder="Enter your message"></textarea>
+						<br />
+						<input type="submit" value="Send" />
+					</form>	
+				</article>
+		</section>
+	
+	</body>
+</html>	
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+	$(document).ready(function(){ 
+		$('.fifth').click(function(){
+			$(this).parent().prev().children('span').css('width','7%');
+			});
+		$('.two-fifth').click(function(){
+			$(this).parent().prev().children('span').css('width','25%');
+			});
+		$('.three-fifth').click(function(){
+			$(this).parent().prev().children('span').css('width','46%');
+			});
+		$('.four-fifth').click(function(){
+			$(this).parent().prev().children('span').css('width','66%');
+			});
+		$('.full').click(function(){
+			$(this).parent().prev().children('span').css('width','100%');
+			});	
+	});
+</script>

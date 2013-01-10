@@ -1,0 +1,76 @@
+#container{
+height: 700px;
+}
+
+.contact h3 {
+	font-family: "Oswald", helvetica, serif, arial;
+	}
+.contact form {
+	overflow: hidden;
+	height: auto;
+	margin: auto;
+	margin-bottom: 20px;
+	}
+#name, #email {
+	width: 350px;
+	color: #000;
+	font-family: "Oswald", helvetica, serif, arial;
+	}
+.contact label {
+	float: left;
+	clear: left;
+	margin: 2px 0px 0 10px;
+	width: 150px;
+	text-align: left;
+	font-size: 14px;
+	color: #fff;
+	font-weight: 800;
+	font-family: "Oswald", helvetica, serif, arial;
+	text-transform: uppercase;
+	}
+.contact input {
+	width: 330px;
+	height: 18px;
+	padding: 5px 10px; 0px 10px; margin: 0 0 20px 0;
+	background: #bbb;
+	font-family: "Oswald", helvetica, serif, arial;
+	font-size: 16px;
+	color: #000;
+	box-shadow: 0px 2px 2px rgba(2,2,2,0.6);
+	}
+.contact textarea {
+	width: 340px;
+	height: 75px;
+	padding: 5px 25px 0px 5px;
+	margin: 0px 0 25px 0px;
+	background: #bbb;
+	color: #000;
+	font-family: "Oswald", helvetica, serif, arial;
+	box-shadow: 0px 2px 2px rgba(2,2,2,0.6);
+	}
+.contact input:focus, .contact textarea:focus {
+	background: #fff;
+	border: 2px solid #A09F9F;
+	}
+	.contact input[type=submit] {
+	width: 100px;
+	height: 32px;
+	border: none;
+	float: right;
+	padding: 5px 15px;
+	margin: 10px 10px 0 0;
+	cursor: pointer;
+	font-family: "Oswald", helvetica, serif, arial;
+	text-transform: uppercase;
+	background: #404040;
+	color: #fff;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#404040', endColorstr='#191919'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#404040), to(#191919)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #404040,  #191919);/* for firefox */
+	box-shadow: 0px 2px 2px rgba(2,2,2,0.6);
+	}
+.middle-box2 input[type=submit]:hover {
+	cursor: pointer;
+	background: #bbb;
+	color: #000;
+	}
